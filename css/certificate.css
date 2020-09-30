@@ -1,0 +1,42 @@
+.certificate{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 3rem 1fr;
+	grid-template-areas: " text text" 
+	"cer1 cer2";
+	background: url(../img/certificate-bg.jpg) no-repeat center center/cover;
+	height: 100%;
+	width: 100%;
+	gap: 1rem;
+}
+.main .certificate h2{
+	grid-area: text;
+	color: gold;
+	letter-spacing: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid #fff;
+	}
+.main .certificate .cer1{
+	grid-area: cer1;
+}
+.main .certificate .cer2{
+	grid-area: cer2;
+}
+.main .certificate .cer1 img,
+.main .certificate .cer2 img{
+	height: 100%;
+	width: 90%;
+	max-height: 350px;
+}
+@media (max-width: 578px){
+	.certificate{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 3rem 1fr 1fr;
+	grid-template-areas: "text" 
+	"cer1"
+	"cer2";
+	}
+}

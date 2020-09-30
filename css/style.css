@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap');
+@import "about.css";
+@import "projects.css";
+@import "certificate.css";
+@import "resume.css";
+@import "footer.css";
+
+/* Default */
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: 'Montserrat', sans-serif;
+}
+body{
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+}
+body a{
+	text-decoration: none;
+}
+body li{
+	list-style: none;
+}
+/* Main layout */
+.main{
+	display: grid;
+	grid-auto-rows: repeat(4, 1fr);
+}
+/* Nav Style */
+.main .nav >a >span{
+	color: gold;
+	border-right: 4px solid #fff;
+	border-radius: 90%;
+	padding: 4px;
+}
+
+.main .nav >div ul li{
+	margin-right: .5rem;
+	margin-left: .5rem;
+	transition: 500ms ease-in-out;
+	position: relative;
+}
+.main .nav >div ul li::after{
+	content: "";
+	background: rgb(255,215,0,.4);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	z-index: -1;
+	transition: 400ms ease-in-out;
+}
+.main .nav >div ul li:hover::after{
+	width: 100%;
+}
+
+/* Home Style */
+.main .home{
+	height: 100vh;
+	width: 100%;
+	background: url(../img/home-bg.jpg) no-repeat bottom center/cover;
+	position: relative;
+}
+.main .home::after{
+	content: "";
+	background: rgb(0,0,0,.7);
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.main .home{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.main .home img{
+	width: 9rem;
+	height: 9rem;
+	border-radius: 5rem;
+	animation: Rotate 2.5s ease-in-out;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.main .home h1{
+	margin-top: 1.6rem;
+	font-size: 2.1rem;
+	color: #fff;
+	opacity: 0;
+	animation: ChristmasLight 600ms ease-in-out alternate infinite 2.1s;
+	border: 1px solid transparent;
+	text-align: center;
+	padding: 3px;
+	z-index: 2;
+}
+/* Keyrames */
+/* Rotate Image */
+@keyframes Rotate{
+	from{}
+	to{transform: rotate(360deg);}
+}
+
+/* Christmas Light(Patay Sindi) */
+@keyframes ChristmasLight{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+
+
+
+
+

@@ -1,0 +1,65 @@
+.main .about{
+	background: url(../img/about-bg.jpg) no-repeat center center/cover;
+	height: 100vh;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1rem 1fr 1fr 1rem;
+	grid-template-rows: 3rem 1fr;
+	grid-template-areas: "about about about about"
+	". text img .";
+	color: #fff;
+	position: relative;
+}
+.main .about::after{
+	content: "";
+	background: rgb(0,0,0,.7);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.main .about h3{
+	letter-spacing: 4px;
+	grid-area: about;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
+	color: gold;
+	border-bottom: 1px solid #fff;
+}
+.main .about img{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 90%;
+	height: 95%;
+	grid-area: img;
+	z-index: 2;
+}
+.main .about p{
+	padding: 1rem;
+	grid-area: text;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 2rem;
+	font-weight: bold;
+	z-index: 2;
+}
+/* About MEdia */
+@media (max-width: 580px){
+	.main .about{
+		grid-template-columns: 1rem 1fr 1rem;
+		grid-template-rows: 3rem 1fr 1fr 1rem;
+		grid-template-areas: "about about about"
+		". img ."
+		". text .";
+	}
+	.main .about img{
+		width: 50%;
+	}
+}

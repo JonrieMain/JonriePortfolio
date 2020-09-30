@@ -1,0 +1,49 @@
+.content{
+background: #000;
+display: flex;
+padding: 6.4rem;
+color: #fff;
+height: 100%;
+width: 100%;
+background: url(../img/story-bg.jpg) no-repeat center center/cover;
+position: relative;
+}
+.content::after{
+	content: "";
+	background: rgb(0,0,0,.7);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.content h5{
+line-height: 2.5rem;
+font-size: 1.5rem;
+font-weight: 100;
+z-index: 2;
+}
+.content h5 span{
+	background: gold;
+	color: #000;
+	padding: 2px;
+}
+.content .back{
+text-decoration: none;
+color: #fff;
+border: 2px solid #fff;
+padding: .2rem .3rem;
+border-radius: 0 2rem 2rem 0;
+z-index: 2;
+}
+@media(max-width: 678px){
+/* Content  Media */
+.content{
+padding: 1rem;
+}
+.content h5{
+font-size: .9rem;
+line-height: 1.8rem;
+}
+}
