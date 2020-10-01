@@ -7,7 +7,7 @@
 	grid-template-rows: 3rem 1fr;
 	grid-template-areas: "text text"
 	"LandingPage JonrieClothing";
-	padding-bottom: 10rem;
+	padding-bottom: 30rem;
 }
 .main .projects h2{
 	letter-spacing: 4px;
