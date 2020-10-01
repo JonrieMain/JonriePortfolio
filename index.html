@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<!-- My Icon Name: J gold letter with swirly ornaments -->
 	<link rel="My Icon" type="image/x-icon" href="./img/icon.jpg">
+	<!-- link AOS Source: https://github.com/michalsnik/aos -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 	<div class="main">
@@ -42,7 +44,7 @@
 						<a class="nav-link" href="https://www.facebook.com/JonrieMain/">Facebook</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="http://www.mediafire.com/file/2xgez4jdsyw2qt5/Jonrie+Portfolio.rar/file">Source</a>
+						<a class="nav-link" href="http://www.mediafire.com/file/dkxfrhvexd3ypk5/JonrieFortfolio.rar/file">Source</a>
 					</li>
 				</ul>
 			</div>
@@ -60,16 +62,16 @@
 		<div class="about" id="about">
 			<h3>About Me</h3>
 			<img src="img/about-pic.jpg">
-			<p>Hi I'm Jonrie Badiang i'm totally beginner and my dream is to become a professional software engineer soon. 
+			<p data-aos="fade-right" data-aos-duration="3000">Hi I'm Jonrie Badiang i'm totally beginner and my dream is to become a professional software engineer soon. 
 				I started studying HTML and CSS when i was in grade 10 and after few months of studying while im in school i start studying 
-				also the fundamentals of programming language like variables,datatypes,input,looping,conditions etc... If you want to know how i discover this just check my story.</p>
+			also the fundamentals of programming language like variables,datatypes,input,looping,conditions etc... If you want to know how i discover this just check my story.</p>
 		</div>
 
 
 		<!-- Projects -->
 		<div class="projects" id="projects">
 			<h2>Self Projects</h2>
-			<div class="LandingPage">
+			<div class="LandingPage" data-aos="fade-right" data-aos-duration="1000">
 				<a href="https://jonriemain.github.io/LandingPage">
 					<img src="./img/LandingPage.png">
 					<span>Click To Open</span>
@@ -79,7 +81,7 @@
 				<p><span>Date Created:</span> September 20, 2020</p>
 				<p><span>IDE:</span>anWriter</p>
 			</div>
-			<div class="JonrieClothing">
+			<div class="JonrieClothing" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
 				<a href="https://jonriemain.github.io/SimpleClothingShop">
 					<img src="./img/Clothing.png">
 					<span>Click To Open</span>
@@ -94,10 +96,10 @@
 		<!-- Certificate -->
 		<div class="certificate" id="certificates">
 			<h2>Certificates</h2>
-			<div class="cer1">
+			<div class="cer1" data-aos="flip-left" data-aos-duration="1000">
 				<img src="./img/cer2.jpg">
 			</div>
-			<div class="cer2">
+			<div class="cer2" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="500">
 				<img src="./img/cer1.jpg">
 			</div>
 		</div>
@@ -199,19 +201,19 @@
 
 		<!-- Footer -->
 		<div class="footer">
-		<div class="text1">
-			<p>Jonrie<span>Portfolio</span></p>
-			<p>tinyurl.com/PortfolioJonrie</p>
+			<div class="text1">
+				<p>Jonrie<span>Portfolio</span></p>
+				<p>tinyurl.com/PortfolioJonrie</p>
+			</div>
+			<div class="text2">
+				<p>Contacts</p>
+				<p>09510578933</p>
+				<p>JonrieMain@gmail.com</p>
+			</div>
+			<div class="text3">
+				<p>&copy 2020 Jonrie Portfolio</p>
+			</div>
 		</div>
-		<div class="text2">
-			<p>Contacts</p>
-			<p>09510578933</p>
-			<p>JonrieMain@gmail.com</p>
-		</div>
-		<div class="text3">
-			<p>&copy 2020 Jonrie Portfolio</p>
-		</div>
-	</div>
 
 
 	</div>
@@ -219,5 +221,10 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<!-- AOS  -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 </body>
 </html>

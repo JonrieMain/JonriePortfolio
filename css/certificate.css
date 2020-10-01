@@ -8,6 +8,7 @@
 	height: 100%;
 	width: 100%;
 	gap: 1rem;
+	padding-bottom: 8rem;
 }
 .main .certificate h2{
 	grid-area: text;
