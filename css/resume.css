@@ -163,6 +163,9 @@
 	background: gold;
 	color: #000;
 }
+.main .resume h5,h4,h3{
+	text-align: center;
+}
 @media (max-width: 782px){
 	.main .resume{
 		grid-template-columns: 1fr;
