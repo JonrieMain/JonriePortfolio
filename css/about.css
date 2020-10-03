@@ -3,10 +3,10 @@
 	height: 100vh;
 	width: 100%;
 	display: grid;
-	grid-template-columns: 1rem 1fr 1fr 1rem;
+	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 3rem 1fr;
-	grid-template-areas: "about about about about"
-	". text img .";
+	grid-template-areas: "about about"
+	"text img";
 	color: #fff;
 	position: relative;
 }
@@ -29,6 +29,7 @@
 	z-index: 2;
 	color: gold;
 	border-bottom: 1px solid #fff;
+	margin: 0;
 }
 .main .about img{
 	position: relative;
@@ -39,6 +40,7 @@
 	height: 95%;
 	grid-area: img;
 	z-index: 2;
+	margin: 0;
 }
 .main .about p{
 	padding: 1rem;
@@ -49,6 +51,7 @@
 	line-height: 2rem;
 	font-weight: bold;
 	z-index: 2;
+	margin: 0;
 }
 /* About MEdia */
 @media (max-width: 580px){

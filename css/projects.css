@@ -27,6 +27,7 @@
 	color: #fff;
 }
 .main .projects img{
+	position: relative;
 	width: 90%;
 	height: 65%;
 	transition: 400ms ease-in-out;
