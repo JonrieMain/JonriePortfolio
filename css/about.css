@@ -32,15 +32,12 @@
 	margin: 0;
 }
 .main .about img{
-	position: relative;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
 	width: 90%;
 	height: 95%;
 	grid-area: img;
 	z-index: 2;
 	margin: 0;
+	padding-top: 1rem;
 }
 .main .about p{
 	padding: 1rem;
@@ -63,6 +60,6 @@
 		". text .";
 	}
 	.main .about img{
-		width: 50%;
+		display: none;
 	}
 }
