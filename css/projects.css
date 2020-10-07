@@ -30,6 +30,8 @@
 	position: relative;
 	width: 90%;
 	height: 65%;
+	max-height: 500px;
+	max-width: 800px;
 	transition: 400ms ease-in-out;
 }
 .main .projects img:hover{
