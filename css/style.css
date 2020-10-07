@@ -69,7 +69,7 @@ body li{
 }
 .main .home::after{
 	content: "";
-	background: rgb(0,0,0,.7);
+	background: rgb(0,0,0,.4);
 	height: 100vh;
 	width: 100%;
 	position: absolute;
