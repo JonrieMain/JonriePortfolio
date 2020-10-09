@@ -58,6 +58,9 @@
 	border: 2px solid gold;
 	padding: 3px;
 }
+.main .projects a span:hover{
+	opacity: 0;
+}
 .main .projects span{
 	color: gold;
 }

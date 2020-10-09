@@ -87,7 +87,7 @@ body li{
 	width: 9rem;
 	height: 9rem;
 	border-radius: 5rem;
-	animation: Rotate 2.5s ease-in-out;
+	animation: Rotate 2.5s ease-in-out 2s;
 	cursor: pointer;
 	z-index: 2;
 }
@@ -97,7 +97,7 @@ body li{
 	font-size: 2.1rem;
 	color: #fff;
 	opacity: 0;
-	animation: ChristmasLight 600ms ease-in-out alternate infinite 2.1s;
+	animation: ChristmasLight 600ms ease-in-out alternate infinite 4.1s;
 	border: 1px solid transparent;
 	text-align: center;
 	padding: 3px;
