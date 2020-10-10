@@ -1,10 +1,11 @@
 .certificate{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 3rem 1fr;
+	grid-template-rows: 3rem repeat(3, 1fr);
 	grid-template-areas: " text text" 
 	"cer1 cer2"
-	"cer3 cer4";
+	"cer3 cer4"
+	"cer5 cer6";
 	background: url(../img/certificate-bg.jpg) no-repeat center center/cover;
 	height: 100%;
 	width: 100%;
@@ -32,10 +33,18 @@
 .main .certificate .cer4{
 	grid-area: cer4;
 }
+.main .certificate .cer5{
+	grid-area: cer5;
+}
+.main .certificate .cer6{
+	grid-area: cer6;
+}
 .main .certificate .cer1 img,
 .main .certificate .cer2 img,
 .main .certificate .cer3 img,
-.main .certificate .cer4 img{
+.main .certificate .cer4 img,
+.main .certificate .cer5 img,
+.main .certificate .cer6 img{
 	height: 100%;
 	width: 90%;
 	max-height: 600px;
@@ -43,13 +52,14 @@
 }
 @media (max-width: 578px){
 	.certificate{
-	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 3rem repeat(4, 1fr);
+	grid-template-rows: 3rem repeat(6, 1fr);
 	grid-template-areas: "text" 
 	"cer1"
 	"cer2"
 	"cer3"
-	"cer4";
+	"cer4"
+	"cer5"
+	"cer6";
 	}
 }
