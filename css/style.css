@@ -29,6 +29,7 @@ body li{
 .main{
 	display: grid;
 	grid-auto-rows: repeat(6, 1fr);
+	max-width: 1700px;
 }
 /* Nav Style */
 .main .nav >a >span{
@@ -39,6 +40,8 @@ body li{
 }
 .main .nav{
 	width: 100%;
+	max-width: 1700px;
+	
 }
 
 .main .nav >div ul li{
@@ -115,6 +118,62 @@ body li{
 	from{opacity: 0;}
 	to{opacity: 1;}
 }
+
+
+
+@media(min-width: 579px) and (max-width: 1700px){
+	.about{
+		height: 100vh;
+	}
+	.main .about{
+		height: 100vh;
+	}
+	.main .about::after{
+		height: 100vh;
+	}
+	.main .about img{
+		margin: auto;
+	}
+	.main .projects{
+		height: 100vh;
+	}
+	
+}
+/* Media if the main width is more than 1700px */
+@media (min-width: 1701px){
+	body{
+		background: url(../img/main-bg.jpg) no-repeat center center/cover;
+		height: 100%;
+		width: 100%;
+	}
+	.main{
+		margin: 0 auto;
+	}
+	.main .nav{
+		margin: 0 auto;
+	}
+	.about{
+		height: 100vh;
+	}
+	.main .about{
+		height: 100vh;
+	}
+	.main .about::after{
+		height: 100vh;
+	}
+	.main .about img{
+		margin: auto;
+	}
+	.main .projects{
+		height: 100vh;
+	}
+	.main .nav >div ul li{
+		font-size: 1.5rem;
+		padding: 0 .9rem;
+	}
+	
+}
+
 
 
 
