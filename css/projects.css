@@ -1,7 +1,8 @@
 .main .projects{
 	height: 100%;
 	width: 100%;
-	background: url(../img/projects-bg.jpg) no-repeat center center/cover;
+	background: rgb(2,0,36);
+background: linear-gradient(138deg, rgba(2,0,36,1) 0%, rgba(1,1,5,1) 79%, rgba(0,212,255,1) 93%);
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: 3rem 1fr;
@@ -48,19 +49,6 @@
 	position: relative;
 }
 
-.main .projects a span{
-	font-size: 2rem;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	transition: 500ms ease-in-out;
-	border: 2px solid gold;
-	padding: 3px;
-}
-.main .projects a span:hover{
-	opacity: 0;
-}
 .main .projects span{
 	color: gold;
 }

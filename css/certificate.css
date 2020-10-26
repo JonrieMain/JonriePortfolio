@@ -6,7 +6,8 @@
 	"cer1 cer2"
 	"cer3 cer4"
 	"cer5 cer6";
-	background: url(../img/certificate-bg.jpg) no-repeat center center/cover;
+	background: rgb(0,0,0);
+background: linear-gradient(315deg, rgba(0,0,0,1) 40%, rgba(148,187,233,1) 100%);
 	height: 100%;
 	width: 100%;
 	gap: 2rem;
