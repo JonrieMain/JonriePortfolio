@@ -1,6 +1,6 @@
 .main .about{
 	background: rgb(2,0,36);
-background: linear-gradient(217deg, rgba(2,0,36,1) 0%, rgba(1,1,5,1) 79%, rgba(0,212,255,1) 93%);
+	background: linear-gradient(217deg, rgba(2,0,36,1) 0%, rgba(1,1,5,1) 79%, rgba(0,212,255,1) 93%);
 	height: 100%;
 	width: 100%;
 	display: grid;
