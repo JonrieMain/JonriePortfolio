@@ -28,43 +28,42 @@
 	width: 90%;
 	height: 100%;
 	max-height: 700px;
-	max-width: 600px;
+	max-width: 450px;
 	grid-area: img;
 	z-index: 2;
 	margin: 0;
 	padding-top: 1rem;
 }
 .main .about p{
-	padding: 1rem;
 	grid-area: text;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	line-height: 2rem;
-	font-weight: bold;
+	font-weight: 200;
 	z-index: 2;
 	margin: 0;
+	font-size: 1rem;
+	padding: .5rem;
 }
 /* About MEdia */
-@media (max-width: 580px){
+@media (max-width: 578px){
 	.main .about{
-		grid-template-columns: 1rem 1fr 1rem;
+		grid-template-columns: 1fr;
 		grid-template-rows: 3rem 1fr 1fr 5rem;
-		grid-template-areas: "about about about"
-		". img ."
-		". text ."
-		". . .";
+		grid-template-areas: "about"
+		"img"
+		"text"
+		".";
 	}
 	.main .about img{
-		max-width: 300px;
-		min-height: 200px;
+		max-width: 150px;
+		min-height: 300px;
 		margin: 0 auto;
 
 	}
 	.main .about p{
-		min-height: 500px;
-		flex-direction: column;
-		justify-content: flex-start;
+		font-size: .7rem;
 	}
 	
 }
