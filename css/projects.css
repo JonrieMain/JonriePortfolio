@@ -1,8 +1,9 @@
+/* projects sec. layout */
 .main .projects{
 	height: 100%;
 	width: 100%;
 	background: rgb(2,0,36);
-background: linear-gradient(138deg, rgba(2,0,36,1) 0%, rgba(1,1,5,1) 79%, rgba(0,212,255,1) 93%);
+	background: linear-gradient(138deg, rgba(2,0,36,1) 0%, rgba(1,1,5,1) 79%, rgba(0,212,255,1) 93%);
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: 3rem 1fr;
@@ -10,6 +11,7 @@ background: linear-gradient(138deg, rgba(2,0,36,1) 0%, rgba(1,1,5,1) 79%, rgba(0
 	"LandingPage JonrieClothing";
 	padding-bottom: 30rem;
 }
+/* projects sec. style */
 .main .projects h2{
 	letter-spacing: 4px;
 	grid-area: text;
@@ -35,9 +37,7 @@ background: linear-gradient(138deg, rgba(2,0,36,1) 0%, rgba(1,1,5,1) 79%, rgba(0
 	max-width: 800px;
 	transition: 600ms ease-in-out;
 }
-.main .projects img:hover{
-	transform: scale(1.1);
-}
+
 .main .projects p{
 	margin: 0;
 	display: flex;
@@ -53,7 +53,12 @@ background: linear-gradient(138deg, rgba(2,0,36,1) 0%, rgba(1,1,5,1) 79%, rgba(0
 	color: gold;
 }
 
-/* Small Devices */
+/* image hover */
+.main .projects img:hover{
+	transform: scale(1.1);
+}
+
+/* media for projects sec. */
 @media (max-width: 578px){
 	.main .projects{
 
@@ -63,6 +68,9 @@ background: linear-gradient(138deg, rgba(2,0,36,1) 0%, rgba(1,1,5,1) 79%, rgba(0
 		"LandingPage" 
 		"JonrieClothing";
 		grid-gap: 3rem;
+	}
+	.main .projects h2{
+		font-size: 1.2rem;
 	}
 }
 

@@ -1,4 +1,6 @@
+/* font awesome */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap');
+/* other style(CSS) import */
 @import "about.css";
 @import "projects.css";
 @import "certificate.css";
@@ -37,6 +39,9 @@ body li{
 	border-radius: 90%;
 	padding: 4px;
 }
+.main .nav >a{
+	transition: 600ms ease-in-out;
+}
 .main .nav{
 	min-width: 300px;
 	width: 100%;
@@ -61,6 +66,10 @@ body li{
 }
 .main .nav >div ul li:hover::after{
 	width: 100%;
+}
+/* nav anchor hover zoom */
+.main .nav >a:hover{
+	transform: scale(1.2);
 }
 
 /* Home Style */
@@ -90,7 +99,7 @@ body li{
 	width: 9rem;
 	height: 9rem;
 	border-radius: 5rem;
-	animation: Rotate 2.5s ease-in-out 2s;
+	animation: Rotate 2.5s ease-in-out;
 	cursor: pointer;
 	z-index: 2;
 }
@@ -100,7 +109,7 @@ body li{
 	font-size: 2rem;
 	color: #fff;
 	opacity: 0;
-	animation: ChristmasLight 600ms ease-in-out alternate infinite 3s;
+	animation: ChristmasLight 600ms ease-in-out alternate infinite 2.1s;
 	border: 1px solid transparent;
 	text-align: center;
 	padding: 3px;
@@ -120,14 +129,14 @@ body li{
 	to{opacity: 1;}
 }
 
-
+/* Media if the screen below 578 or equal */
 @media (max-width: 578px){
 	.main .home h1{
 		font-size: .9rem;
 	}
 }
 
-
+/* media if the screen is 579px to 1700px */
 @media(min-width: 579px) and (max-width: 1700px){
 	.about{
 		height: 100vh;

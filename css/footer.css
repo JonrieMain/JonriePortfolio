@@ -1,3 +1,4 @@
+/* footer sec. layout */
 .main .footer{
 	height: 100%;
 	width: 100%;
@@ -8,15 +9,13 @@
 	grid-template-areas: "text1 text2"
 	"text3 text3";
 }
+/* footer sec. layout */
 .main .footer p{
 	color: #fff;
 	margin: 0;
 	cursor: pointer;
 	transition: 400ms ease-in-out;
 	line-height: 2rem;
-}
-.main .footer p:hover{
-	color: gold;
 }
 
 .main .footer .text1{
@@ -40,6 +39,12 @@
 	justify-content: center;
 	flex-direction: column;
 }
+
+/* footer paragraph hover */
+.main .footer p:hover{
+	color: gold;
+}
+/* media for footer sec. */
 @media (max-width: 578px){
 	.main .footer{
 		grid-template-columns: 1fr;
