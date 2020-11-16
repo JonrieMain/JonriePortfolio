@@ -3,8 +3,8 @@
 	display: grid;
 	height: 100%;
 	width: 100%;
-	background: rgb(34,193,195);
-	background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(37,29,12,1) 100%);
+	background: rgb(0,0,0);
+	background: radial-gradient(circle, rgba(0,0,0,1) 95%, rgba(36,105,150,1) 100%, rgba(36,105,150,1) 100%);
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 16.5rem 4.5rem repeat(4, 4.6rem) 4.5rem 4.6rem 4.5rem;
 	grid-template-areas: "div1 div1 div1"

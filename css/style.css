@@ -1,5 +1,5 @@
 /* font awesome */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 /* other style(CSS) import */
 @import "about.css";
 @import "projects.css";
@@ -15,7 +15,7 @@
 	margin: 0;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Oswald', sans-serif;
 }
 body{
 	line-height: 1.15;
@@ -89,44 +89,44 @@ body li{
 	left: 0;
 	z-index: 1;
 }
-.main .home{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
 .main .home img{
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-55%,-50%);
 	width: 9rem;
 	height: 9rem;
 	border-radius: 5rem;
-	animation: Rotate 2.5s ease-in-out;
 	cursor: pointer;
 	z-index: 2;
 }
-
 .main .home h1{
+	position: absolute;
+	top: 55%;
+	left: 49%;
+	transform: translate(-45%,-51%);
 	margin-top: 1.6rem;
 	font-size: 2rem;
 	color: #fff;
-	opacity: 0;
-	animation: ChristmasLight 600ms ease-in-out alternate infinite 2.1s;
-	border: 1px solid transparent;
 	text-align: center;
 	padding: 3px;
 	z-index: 2;
-
+	/* Keyrames */
+	animation: type 4s steps(30) infinite;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 30ch;
 }
+
+
 /* Keyrames */
-/* Rotate Image */
-@keyframes Rotate{
-	from{}
-	to{transform: rotate(360deg);}
-}
-
-/* Christmas Light(Patay Sindi) */
-@keyframes ChristmasLight{
-	from{opacity: 0;}
-	to{opacity: 1;}
+@keyframes type{
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 30ch;
+  }
 }
 
 /* Media if the screen below 578 or equal */

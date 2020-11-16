@@ -2,8 +2,8 @@
 .main .projects{
 	height: 100%;
 	width: 100%;
-	background: rgb(2,0,36);
-	background: linear-gradient(138deg, rgba(2,0,36,1) 0%, rgba(1,1,5,1) 79%, rgba(0,212,255,1) 93%);
+	background: rgb(0,0,0);
+	background: radial-gradient(circle, rgba(0,0,0,1) 92%, rgba(36,105,150,1) 100%, rgba(36,105,150,1) 100%);
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: 3rem 1fr;
