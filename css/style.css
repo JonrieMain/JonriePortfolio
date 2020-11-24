@@ -1,6 +1,7 @@
 /* font awesome */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 /* other style(CSS) import */
+@import "home.css";
 @import "about.css";
 @import "projects.css";
 @import "certificate.css";
@@ -87,7 +88,6 @@ body li{
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 1;
 }
 .main .home img{
 	position: absolute;
