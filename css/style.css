@@ -1,7 +1,6 @@
 /* font awesome */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 /* other style(CSS) import */
-@import "home.css";
 @import "about.css";
 @import "projects.css";
 @import "certificate.css";
@@ -149,9 +148,6 @@ body li{
 	}
 	.main .about img{
 		margin: auto;
-	}
-	.main .projects{
-		height: 100vh;
 	}
 	
 }

@@ -3,11 +3,12 @@
 	height: 100%;
 	width: 100%;
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: 3rem 1fr;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 3rem 1fr 1fr;
 	grid-template-areas: "text text"
-	"LandingPage JonrieClothing";
-	padding-bottom: 30rem;
+	"LandingPage JonrieClothing"
+	"selfproject ............";
+	padding-bottom: 20rem;
 	/* background */
 	background: rgb(0,0,0);
 	background: -moz-radial-gradient(circle, rgba(0,0,0,1) 96%, rgba(255,215,0,1) 100%, rgba(255,215,0,1) 100%);
@@ -31,6 +32,10 @@
 }
 .main .projects .JonrieClothing{
 	grid-area: JonrieClothing;
+	color: #fff;
+}
+.main .projects .self-project{
+	grid-area: selfproject;
 	color: #fff;
 }
 .main .projects img{
@@ -67,10 +72,11 @@
 	.main .projects{
 
 		grid-template-columns: 1fr;
-		grid-template-rows: 3rem 1fr 1fr;
+		grid-template-rows: 3rem repeat(3, 1fr);
 		grid-template-areas: "text"
 		"LandingPage" 
-		"JonrieClothing";
+		"JonrieClothing"
+		"selfproject";
 		grid-gap: 3rem;
 	}
 	.main .projects h2{
