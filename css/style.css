@@ -164,20 +164,12 @@ body li{
 	.main .nav{
 		margin: 0 auto;
 	}
-	.about{
-		height: 100vh;
-	}
+	
 	.main .about{
-		height: 100vh;
-	}
-	.main .about::after{
 		height: 100vh;
 	}
 	.main .about img{
 		margin: auto;
-	}
-	.main .projects{
-		height: 100vh;
 	}
 	.main .nav >div ul li{
 		font-size: 1.5rem;
