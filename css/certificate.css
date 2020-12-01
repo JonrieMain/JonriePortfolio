@@ -1,16 +1,7 @@
 /* certificates sec. layout */
-.main .certificate{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 3rem repeat(3, 1fr);
-	grid-template-areas: " text text" 
-	"cer1 cer2"
-	"cer3 cer4"
-	"cer5 cer6";
+.main .certificates{
 	height: 100%;
 	width: 100%;
-	gap: 5rem;
-	padding-bottom: 10rem;
 	/* background */
 	background: rgb(0,0,0);
 	background: -moz-radial-gradient(circle, rgba(0,0,0,1) 96%, rgba(255,215,0,1) 100%, rgba(255,215,0,1) 100%);
@@ -18,65 +9,20 @@
 	background: radial-gradient(circle, rgba(0,0,0,1) 96%, rgba(255,215,0,1) 100%, rgba(255,215,0,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffd700",GradientType=1);
 }
-/* certificates sec. style */
-.main .certificate h2{
-	grid-area: text;
-	color: gold;
-	letter-spacing: 4px;
+.main .certificates-text{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-bottom: 1px solid #fff;
-	}
-.main .certificate .cer1{
-	grid-area: cer1;
+	height: 5rem;
+	width: 100%;
+   border-bottom: 1px solid #fff;
 }
-.main .certificate .cer2{
-	grid-area: cer2;
+.main .certificates-text h1{
+	 font-size: 2rem;
+	 letter-spacing: 4px;
+	 color: gold;
+    
 }
-.main .certificate .cer3{
-	grid-area: cer3;
-}
-.main .certificate .cer4{
-	grid-area: cer4;
-}
-.main .certificate .cer5{
-	grid-area: cer5;
-}
-.main .certificate .cer6{
-	grid-area: cer6;
-}
-.main .certificate .cer1 img,
-.main .certificate .cer2 img,
-.main .certificate .cer3 img,
-.main .certificate .cer4 img,
-.main .certificate .cer5 img,
-.main .certificate .cer6 img{
-	height: 100%;
-	width: 90%;
-	max-height: 600px;
-	max-width: 800px;
-	transition: 500ms ease-in-out;
-}
-/* image hover */
-.main .certificate img:hover{
-	transform: scale(1.1);
-	cursor: pointer;
-}
-/* media for certificate sec. */
-@media (max-width: 578px){
-.main .certificate{
-	grid-template-columns: 1fr;
-	grid-template-rows: 3rem repeat(6, 1fr);
-	grid-template-areas: "text" 
-	"cer1"
-	"cer2"
-	"cer3"
-	"cer4"
-	"cer5"
-	"cer6";
-	}
-	.main .certificate h2{
-		font-size: 1.3rem;
-	}
-}
+
+	
+

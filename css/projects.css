@@ -7,7 +7,7 @@
 	grid-template-rows: 3rem 1fr 1fr;
 	grid-template-areas: "text text"
 	"LandingPage JonrieClothing"
-	"selfproject ............";
+	"selfproject memestemplate";
 	padding-bottom: 30rem;
 	/* background */
 	background: rgb(0,0,0);
@@ -37,6 +37,10 @@
 }
 .main .projects .self-project{
 	grid-area: selfproject;
+	color: #fff;
+}
+.main .projects .memes-template{
+	grid-area: memestemplate;
 	color: #fff;
 }
 .main .projects img{
@@ -73,11 +77,12 @@
 	.main .projects{
 
 		grid-template-columns: 1fr;
-		grid-template-rows: 3rem repeat(3, 1fr);
+		grid-template-rows: 3rem repeat(4, 1fr);
 		grid-template-areas: "text"
 		"LandingPage" 
 		"JonrieClothing"
-		"selfproject";
+		"selfproject"
+		"memestemplate";
 		grid-gap: 3rem;
 	}
 	.main .projects h2{
