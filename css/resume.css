@@ -4,16 +4,15 @@
 	height: 100%;
 	width: 100%;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 16.5rem 4.5rem repeat(4, 4.6rem) 4.5rem 4.6rem 4.5rem;
+	grid-template-rows: 16.5rem 4.5rem repeat(2, 4.6rem) 4.5rem 4.6rem 4.5rem;
 	grid-template-areas: "div1 div1 div1"
 	"div2 div2 div2"
 	"div3 div4 div5"
 	"div6 div7 div8"
 	"div9 div10 div11"
-	"div12 div13 ."
-	"div14 div14 div14"
-	"div15 div16 div17"
-	"div18 div18 div18";
+	"div12 div12 div12"
+	"div13 div14 div15"
+	"div16 div16 div16";
 	color: #fff;
 	gap: 3rem;
 	/* background */
@@ -30,11 +29,12 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	border-bottom: 2.5px solid #fff;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #fff;
 }
 .main .resume div:nth-child(1) h1{
 	color: gold;
-	border-bottom: 2.5px solid #fff;
+	letter-spacing: 4px;
 }
 .main .resume div:nth-child(2){
 	grid-area: div2;
@@ -45,7 +45,7 @@
 }
 .main .resume div:nth-child(2) h1{
 	color: gold;
-	border-bottom: 2.5px solid #fff;
+	letter-spacing: 4px;
 }
 .main .resume div:nth-child(3){
 	grid-area: div3;
@@ -116,6 +116,8 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
 }
 .main .resume div:nth-child(13){
 	grid-area: div13;
@@ -130,9 +132,6 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	border-top: 2.5px solid #fff;
-	border-bottom: 2.5px solid #fff;
-	border-bottom-width: initial;
 }
 .main .resume div:nth-child(14) h1{
 	color: gold;
@@ -150,22 +149,11 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	border-top: 1px solid #fff;
+	padding: 1rem 0;
 }
-.main .resume div:nth-child(17){
-	grid-area: div17;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-.main .resume div:nth-child(18){
-	grid-area: div18;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	border-top: 2.5px solid #fff;
-}
+
+
 .main .resume h3{
 	background: gold;
 	color: #000;
@@ -177,7 +165,7 @@
 @media (max-width: 782px){
 	.main .resume{
 		grid-template-columns: 1fr;
-		grid-template-rows: 15rem 3rem repeat(11, 5rem) 3rem repeat(3, 5rem) 3rem;
+		grid-template-rows: 15rem 3rem repeat(9, 5rem) 3rem repeat(3, 5rem) 3rem;
 		grid-template-areas: "div1"
 		"div2"
 		"div3"
@@ -193,9 +181,7 @@
 		"div13"
 		"div14"
 		"div15"
-		"div16"
-		"div17"
-		"div18";
+		"div16";
 	}
 	/* media for resume,h1 and h3 style */
 	.main .resume h1{
