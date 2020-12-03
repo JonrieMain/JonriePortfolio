@@ -33,6 +33,13 @@ body li{
 	min-width: 300px;
 }
 /* Nav Style */
+.main .nav{
+	min-width: 300px;
+	width: 100%;
+	max-width: 1700px;
+	background: #000 !important;
+	border-bottom: 1px solid #fff;
+}
 .main .nav >a >span{
 	color: gold;
 	border-right: 4px solid #fff;
@@ -41,12 +48,6 @@ body li{
 }
 .main .nav >a{
 	transition: 600ms ease-in-out;
-}
-.main .nav{
-	min-width: 300px;
-	width: 100%;
-	max-width: 1700px;
-	background: #000 !important;
 }
 
 .main .nav >div ul li{
