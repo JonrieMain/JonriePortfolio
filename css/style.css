@@ -38,7 +38,6 @@ body li{
 	width: 100%;
 	max-width: 1700px;
 	background: #000 !important;
-	border-bottom: 1px solid #fff;
 }
 .main .nav >a >span{
 	color: gold;
@@ -56,7 +55,7 @@ body li{
 }
 .main .nav >div ul li::after{
 	content: "";
-	background: rgb(255,215,0,.4);
+	background: rgb(255,215,0);
 	position: absolute;
 	top: 0;
 	left: 0;
