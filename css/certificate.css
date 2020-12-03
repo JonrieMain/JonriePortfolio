@@ -13,7 +13,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 5rem;
+	height: 3.8rem;
 	width: 100%;
    border-bottom: 1px solid #fff;
 }
@@ -22,6 +22,13 @@
 	 letter-spacing: 4px;
 	 color: gold;
     
+}
+.main .container .carousel-item img{
+	height: 100%;
+	width: 100%;
+	max-height: 700px;
+	max-width: 600px;
+	margin: 1rem auto;
 }
 
 	

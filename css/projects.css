@@ -26,6 +26,7 @@
 	align-items: center;
 	color: gold;
 	border-bottom: 1px solid #fff;
+	padding-bottom: 1rem;
 }
 .main .projects .LandingPage{
 	grid-area: LandingPage;
