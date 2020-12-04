@@ -30,7 +30,7 @@ body li{
 /* Main layout */
 .main{
 	max-width: 1700px;
-	min-width: 300px;
+	min-width: 350px;
 }
 /* Nav Style */
 .main .nav{
@@ -150,9 +150,7 @@ body li{
 	.main .about::after{
 		height: 100vh;
 	}
-	.main .about img{
-		margin: auto;
-	}
+	
 	
 }
 /* Media if the main width is more than 1700px */

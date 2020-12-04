@@ -13,7 +13,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 3.8rem;
+	height: 4rem;
 	width: 100%;
    border-bottom: 1px solid #fff;
 }
@@ -29,6 +29,12 @@
 	max-height: 420px;
 	max-width: 600px;
 	margin: 5rem auto;
+}
+
+@media (max-width: 578px){
+	.main .certificates-text h1{
+	 font-size: 1.5rem;
+	}
 }
 
 	

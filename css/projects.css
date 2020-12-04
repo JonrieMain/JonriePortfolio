@@ -4,7 +4,7 @@
 	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 3rem 1fr 1fr;
+	grid-template-rows: 4rem 1fr 1fr;
 	grid-template-areas: "text text"
 	"LandingPage JonrieClothing"
 	"selfproject memestemplate";
@@ -78,7 +78,7 @@
 	.main .projects{
 
 		grid-template-columns: 1fr;
-		grid-template-rows: 3rem repeat(4, 1fr);
+		grid-template-rows: 4rem repeat(4, 1fr);
 		grid-template-areas: "text"
 		"LandingPage" 
 		"JonrieClothing"
