@@ -37,7 +37,11 @@ body li{
 	min-width: 300px;
 	width: 100%;
 	max-width: 1700px;
-	background: #000 !important;
+	background: transparent !important;
+	transition: .8s ease-in-out;
+}
+.main .nav.sticky{
+	background: rgba(32,32,32) !important;
 }
 .main .nav >a >span{
 	color: gold;
