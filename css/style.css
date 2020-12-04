@@ -30,7 +30,7 @@ body li{
 /* Main layout */
 .main{
 	max-width: 1700px;
-	min-width: 350px;
+	min-width: 400px;
 }
 /* Nav Style */
 .main .nav{
