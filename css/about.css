@@ -4,10 +4,9 @@
 	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 3rem 1fr 10rem;
+	grid-template-rows: 3rem 1fr;
 	grid-template-areas: "about about"
-	"text img"
-	". .";
+	"text img";
 	color: #fff;
 	position: relative;
 	min-height: 100%;
@@ -60,11 +59,10 @@
 @media (max-width: 578px){
 	.main .about{
 		grid-template-columns: 1fr;
-		grid-template-rows: 4rem 1fr 1fr 5rem;
+		grid-template-rows: 4rem 1fr 1fr;
 		grid-template-areas: "about"
 		"img"
-		"text"
-		".";
+		"text";
 	}
 	.main .about img{
 		max-width: 250px;

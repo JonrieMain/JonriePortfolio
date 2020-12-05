@@ -30,7 +30,7 @@ body li{
 /* Main layout */
 .main{
 	max-width: 1700px;
-	min-width: 400px;
+	min-width: 500px;
 }
 /* Nav Style */
 .main .nav{
@@ -41,7 +41,7 @@ body li{
 	transition: .8s ease-in-out;
 }
 .main .nav.sticky{
-	background: rgba(32,32,32) !important;
+	background: #000 !important;
 }
 .main .nav >a >span{
 	color: gold;
@@ -56,6 +56,7 @@ body li{
 .main .nav >div ul li{
 	transition: 500ms ease-in-out;
 	position: relative;
+	font-size: 1.2rem;
 }
 .main .nav >div ul li::after{
 	content: "";
@@ -120,6 +121,24 @@ body li{
 	white-space: nowrap;
 	width: 30ch;
 }
+.main .home a {
+	padding: .4rem 2rem;
+	cursor: pointer;
+	color: #fff;
+	position: absolute;
+	top: 80%;
+	left: 49%;
+	transform: translate(-45%,-51%);
+	border: 1px solid gold;
+	font-size: 2rem;
+	z-index: 2;
+	text-decoration: none;
+	transition: .5s ease-in-out;
+	border-radius: 1rem;
+}
+.main .home a:hover{
+	background: gold;
+}
 
 
 /* Keyrames */
@@ -135,7 +154,7 @@ body li{
 /* Media if the screen below 578 or equal */
 @media (max-width: 578px){
 	.main .home h1{
-		font-size: .9rem;
+		font-size: 2rem;
 	}
 }
 

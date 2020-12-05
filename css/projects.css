@@ -8,7 +8,6 @@
 	grid-template-areas: "text text"
 	"LandingPage JonrieClothing"
 	"selfproject memestemplate";
-	padding-bottom: 30rem;
 	/* background */
 	background: rgb(0,0,0);
 	background: -moz-radial-gradient(circle, rgba(0,0,0,1) 96%, rgba(255,215,0,1) 100%, rgba(255,215,0,1) 100%);
