@@ -116,6 +116,7 @@
 	align-items: center;
 	color: gold;
 	letter-spacing: 4px;
+	text-align: center;
 }
 .main .resume div:nth-child(13){
 	grid-area: div13;

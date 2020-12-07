@@ -30,7 +30,7 @@ body li{
 /* Main layout */
 .main{
 	max-width: 1700px;
-	min-width: 500px;
+	min-width: 400px;
 }
 /* Nav Style */
 .main .nav{
@@ -154,24 +154,11 @@ body li{
 /* Media if the screen below 578 or equal */
 @media (max-width: 578px){
 	.main .home h1{
-		font-size: 2rem;
+		font-size: 1.1rem;
 	}
 }
 
-/* media if the screen is 579px to 1700px */
-@media(min-width: 579px) and (max-width: 1700px){
-	.about{
-		height: 100vh;
-	}
-	.main .about{
-		height: 100vh;
-	}
-	.main .about::after{
-		height: 100vh;
-	}
-	
-	
-}
+
 /* Media if the main width is more than 1700px */
 @media (min-width: 1701px){
 	body{
