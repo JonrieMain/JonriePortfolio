@@ -7,7 +7,6 @@
 	grid-template-rows: 4rem 1fr;
 	grid-template-areas: "text text"
 	"paragraph img";
-	padding: 1rem;
 	min-width: 450px;
 }
 /* About sec. style */
@@ -51,6 +50,5 @@
 	"img img"
 	"paragraph paragraph";
 }
-	
 	
 }
