@@ -4,51 +4,76 @@
 	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 4rem 1fr;
-	grid-template-areas: "text text"
-	"paragraph img";
-	min-width: 450px;
+	grid-template-rows: 3rem 1fr 10rem;
+	grid-template-areas: "about about"
+	"text img"
+	". .";
+	color: #fff;
+	position: relative;
+	min-height: 100%;
+	/* background */
+	background: rgb(0,0,0);
+	background: -moz-radial-gradient(circle, rgba(0,0,0,1) 96%, rgba(255,215,0,1) 100%, rgba(255,215,0,1) 100%);
+	background: -webkit-radial-gradient(circle, rgba(0,0,0,1) 96%, rgba(255,215,0,1) 100%, rgba(255,215,0,1) 100%);
+	background: radial-gradient(circle, rgba(0,0,0,1) 96%, rgba(255,215,0,1) 100%, rgba(255,215,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffd700",GradientType=1);
 }
 /* About sec. style */
 .main .about h3{
+	letter-spacing: 4px;
+	grid-area: about;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
+	color: gold;
+	border-bottom: 1px solid #fff;
+	margin: 0;
+}
+.main .about img{
+	width: 90%;
+	height: 100%;
+	max-height: 700px;
+	max-width: 450px;
+	grid-area: img;
+	z-index: 2;
+	margin: 0;
+	padding-top: 1rem;
+}
+.main .about p{
 	grid-area: text;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	letter-spacing: 4px;
-	color: gold;
-	font-size: 2rem;
-	color: gold;
-   border-bottom: 1px solid #fff;
-}
-.main .about p{
-	grid-area: paragraph;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 1.2rem;
 	line-height: 2rem;
-	color: #fff;
-	padding: 4rem;
+	font-weight: 200;
+	z-index: 2;
+	margin: 0;
+	font-size: 1rem;
+	padding: .5rem;
 }
-.main .about img{
-	grid-area: img;
-	margin: auto;
-	height: 100%;
-	width: 100%;
-	max-height: 400px;
-	max-width: 300px;
-}
-
 
 /* media for about sec. */
-@media (max-width: 720px){
+@media (max-width: 578px){
 	.main .about{
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 4rem 1fr 1fr;
-	grid-template-areas: "text text"
-	"img img"
-	"paragraph paragraph";
-}
+		grid-template-columns: 1fr;
+		grid-template-rows: 3rem 1fr 1fr 5rem;
+		grid-template-areas: "about"
+		"img"
+		"text"
+		".";
+	}
+	.main .about img{
+		max-width: 150px;
+		min-height: 300px;
+		margin: 0 auto;
+
+	}
+	.main .about p{
+		font-size: .7rem;
+	}
+	.main .about h3{
+		font-size: 1.2rem;
+	}
 	
 }

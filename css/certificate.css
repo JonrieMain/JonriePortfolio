@@ -2,13 +2,18 @@
 .main .certificates{
 	height: 100%;
 	width: 100%;
-	min-width: 450px;
+	/* background */
+	background: rgb(0,0,0);
+	background: -moz-radial-gradient(circle, rgba(0,0,0,1) 96%, rgba(255,215,0,1) 100%, rgba(255,215,0,1) 100%);
+	background: -webkit-radial-gradient(circle, rgba(0,0,0,1) 96%, rgba(255,215,0,1) 100%, rgba(255,215,0,1) 100%);
+	background: radial-gradient(circle, rgba(0,0,0,1) 96%, rgba(255,215,0,1) 100%, rgba(255,215,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffd700",GradientType=1);
 }
 .main .certificates-text{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 4rem;
+	height: 3.8rem;
 	width: 100%;
    border-bottom: 1px solid #fff;
 }
@@ -25,8 +30,6 @@
 	max-width: 600px;
 	margin: 5rem auto;
 }
-
-
 
 	
 

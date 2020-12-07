@@ -4,13 +4,18 @@
 	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 4rem 1fr 1fr;
+	grid-template-rows: 3rem 1fr 1fr;
 	grid-template-areas: "text text"
 	"LandingPage JonrieClothing"
 	"selfproject memestemplate";
+	padding-bottom: 30rem;
 	/* background */
+	background: rgb(0,0,0);
+	background: -moz-radial-gradient(circle, rgba(0,0,0,1) 96%, rgba(255,215,0,1) 100%, rgba(255,215,0,1) 100%);
+	background: -webkit-radial-gradient(circle, rgba(0,0,0,1) 96%, rgba(255,215,0,1) 100%, rgba(255,215,0,1) 100%);
+	background: radial-gradient(circle, rgba(0,0,0,1) 96%, rgba(255,215,0,1) 100%, rgba(255,215,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffd700",GradientType=1);
 	grid-gap: 1rem;
-	min-width: 450px;
 }
 /* projects sec. style */
 .main .projects h2{
@@ -73,7 +78,7 @@
 	.main .projects{
 
 		grid-template-columns: 1fr;
-		grid-template-rows: 4rem repeat(4, 1fr);
+		grid-template-rows: 3rem repeat(4, 1fr);
 		grid-template-areas: "text"
 		"LandingPage" 
 		"JonrieClothing"
@@ -81,7 +86,9 @@
 		"memestemplate";
 		grid-gap: 3rem;
 	}
-	
+	.main .projects h2{
+		font-size: 1.2rem;
+	}
 }
 
 

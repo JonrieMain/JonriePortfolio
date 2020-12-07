@@ -1,3 +1,5 @@
+/* font awesome */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 /* other style(CSS) import */
 @import "about.css";
 @import "projects.css";
@@ -13,6 +15,7 @@
 	margin: 0;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
+	font-family: 'Oswald', sans-serif;
 }
 body{
 	line-height: 1.15;
@@ -26,24 +29,16 @@ body li{
 }
 /* Main layout */
 .main{
-	height: 100%;
-	width: 100%;
 	max-width: 1700px;
-	min-width: 450px;
-	/* background */
-	background: rgb(0,0,0);
-	background: -moz-radial-gradient(circle, rgba(0,0,0,1) 96%, rgba(255,215,0,1) 100%, rgba(255,215,0,1) 100%);
-	background: -webkit-radial-gradient(circle, rgba(0,0,0,1) 96%, rgba(255,215,0,1) 100%, rgba(255,215,0,1) 100%);
-	background: radial-gradient(circle, rgba(0,0,0,1) 96%, rgba(255,215,0,1) 100%, rgba(255,215,0,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffd700",GradientType=1);
+	min-width: 320px;
 }
 /* Nav Style */
 .main .nav{
 	min-width: 300px;
 	width: 100%;
 	max-width: 1700px;
-	background: transparent !important;
-	transition: .8s ease-in-out;
+	background: rgba(0,0,0,.2) !important;
+	transition: 500ms ease-in-out;
 }
 .main .nav.sticky{
 	background: #000 !important;
@@ -61,11 +56,10 @@ body li{
 .main .nav >div ul li{
 	transition: 500ms ease-in-out;
 	position: relative;
-	font-size: 1.2rem;
 }
 .main .nav >div ul li::after{
 	content: "";
-	background: rgb(255,215,0);
+	background: rgb(255,215,0,.4);
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -88,7 +82,6 @@ body li{
 	width: 100%;
 	background: url(../img/home-bg.jpg) no-repeat bottom center/cover;
 	position: relative;
-	min-width: 450px;
 }
 .main .home::after{
 	content: "";
@@ -127,24 +120,6 @@ body li{
 	white-space: nowrap;
 	width: 30ch;
 }
-.main .home a {
-	padding: .4rem 2rem;
-	cursor: pointer;
-	color: #fff;
-	position: absolute;
-	top: 80%;
-	left: 49%;
-	transform: translate(-45%,-51%);
-	border: 1px solid gold;
-	font-size: 2rem;
-	z-index: 2;
-	text-decoration: none;
-	transition: .5s ease-in-out;
-	border-radius: 1rem;
-}
-.main .home a:hover{
-	background: gold;
-}
 
 
 /* Keyrames */
@@ -160,11 +135,26 @@ body li{
 /* Media if the screen below 578 or equal */
 @media (max-width: 578px){
 	.main .home h1{
-		font-size: 1.1rem;
+		font-size: .9rem;
 	}
 }
 
-
+/* media if the screen is 579px to 1700px */
+@media(min-width: 579px) and (max-width: 1700px){
+	.about{
+		height: 100vh;
+	}
+	.main .about{
+		height: 100vh;
+	}
+	.main .about::after{
+		height: 100vh;
+	}
+	.main .about img{
+		margin: auto;
+	}
+	
+}
 /* Media if the main width is more than 1700px */
 @media (min-width: 1701px){
 	body{
