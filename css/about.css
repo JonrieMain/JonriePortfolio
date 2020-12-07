@@ -29,6 +29,7 @@
 	color: gold;
 	border-bottom: 1px solid #fff;
 	margin: 0;
+	font-size: 2.1rem;
 }
 .main .about img{
 	width: 90%;
@@ -45,12 +46,12 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	line-height: 2rem;
-	font-weight: 200;
+	line-height: 3rem;
+	font-weight: 100;
 	z-index: 2;
 	margin: 0;
-	font-size: 1rem;
-	padding: .5rem;
+	font-size: 1.4rem;
+	padding: 1rem;
 }
 
 /* media for about sec. */
@@ -70,10 +71,10 @@
 
 	}
 	.main .about p{
-		font-size: .8rem;
+		font-size: .9rem;
 	}
 	.main .about h3{
-		font-size: 1.2rem;
+		font-size: 1.5rem;
 	}
 	
 }
