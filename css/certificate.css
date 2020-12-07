@@ -2,12 +2,7 @@
 .main .certificates{
 	height: 100%;
 	width: 100%;
-	/* background */
-	background: rgb(0,0,0);
-	background: -moz-radial-gradient(circle, rgba(0,0,0,1) 96%, rgba(255,215,0,1) 100%, rgba(255,215,0,1) 100%);
-	background: -webkit-radial-gradient(circle, rgba(0,0,0,1) 96%, rgba(255,215,0,1) 100%, rgba(255,215,0,1) 100%);
-	background: radial-gradient(circle, rgba(0,0,0,1) 96%, rgba(255,215,0,1) 100%, rgba(255,215,0,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffd700",GradientType=1);
+	min-width: 450px;
 }
 .main .certificates-text{
 	display: flex;

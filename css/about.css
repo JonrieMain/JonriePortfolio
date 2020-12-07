@@ -2,54 +2,55 @@
 .main .about{
 	height: 100%;
 	width: 100%;
-	position: relative;
-	/* background */
-	background: rgb(0,0,0);
-	background: -moz-radial-gradient(circle, rgba(0,0,0,1) 96%, rgba(255,215,0,1) 100%, rgba(255,215,0,1) 100%);
-	background: -webkit-radial-gradient(circle, rgba(0,0,0,1) 96%, rgba(255,215,0,1) 100%, rgba(255,215,0,1) 100%);
-	background: radial-gradient(circle, rgba(0,0,0,1) 96%, rgba(255,215,0,1) 100%, rgba(255,215,0,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffd700",GradientType=1);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 4rem 1fr;
+	grid-template-areas: "text text"
+	"paragraph img";
 	padding: 1rem;
+	min-width: 450px;
 }
 /* About sec. style */
-.main .about div:nth-child(1){
+.main .about h3{
+	grid-area: text;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 4rem;
-	width: 100%;
-}
-.main .about div:nth-child(1) h3{
 	letter-spacing: 4px;
-	z-index: 2;
 	color: gold;
-	margin: 0;
-	padding: 0 5rem;
 	font-size: 2rem;
 	color: gold;
+   border-bottom: 1px solid #fff;
 }
-.main .about div:nth-child(2){
+.main .about p{
+	grid-area: paragraph;
 	display: flex;
-	}
-.main .about div:nth-child(2) p{
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	line-height: 2rem;
 	color: #fff;
+	padding: 4rem;
 }
 .main .about img{
-	width: 100%;
+	grid-area: img;
+	margin: auto;
 	height: 100%;
-	max-height: 500px;
-	max-width: 100px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	opacity: .2;
+	width: 100%;
+	max-height: 400px;
+	max-width: 300px;
 }
 
 
 /* media for about sec. */
-@media (max-width: 578px){
-
+@media (max-width: 720px){
+	.main .about{
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 4rem 1fr 1fr;
+	grid-template-areas: "text text"
+	"img img"
+	"paragraph paragraph";
+}
 	
 	
 }
