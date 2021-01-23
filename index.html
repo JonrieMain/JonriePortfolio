@@ -63,7 +63,7 @@
 		<!-- About -->
 		<div class="about" id="about">
 			<h3>About Me</h3>
-			<img src="img/about-pic.jpg">
+			<img src="img/about-pic.jpg" alt="about-pic">
 			<p data-aos="fade-right" data-aos-duration="3000">Hi I'm Jonrie Badiang i'm totally beginner and my dream is to become a Web and Mobile app developer soon. 
 			I started studying HTML and CSS when i was in grade 10 and after few months of studying while im in school i start studying also the fundamentals of programming language like variables,datatypes,input,looping,conditions etc... If you want to know how i discover this just check My Story.</p>
 		</div>
@@ -74,7 +74,7 @@
 			<h2>Self Projects</h2>
 			<div class="LandingPage" data-aos="zoom-in" data-aos-duration="1000">
 				<a href="https://jonriemain.github.io/LandingPage">
-					<img src="./img/LandingPage.png">
+					<img src="./img/LandingPage.png" alt="landingpageImage">
 				</a>
 				<p><span>Landing page from scratch</span></p>
 				<p><span>Use:</span> HTML,CSS</p>
@@ -84,7 +84,7 @@
 
 			<div class="JonrieClothing" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
 				<a href="https://jonriemain.github.io/SimpleClothingShop">
-					<img src="./img/Clothing.png">
+					<img src="./img/Clothing.png" alt="SimpleClothingShopImage">
 				</a>
 				<p><span>Simple Clothing Shop from scratch</span></p>
 				<p><span>Use:</span> HTML,CSS,Javascript</p>
@@ -93,7 +93,7 @@
 			</div>
 			<div class="self-project" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="700">
 				<a href="https://jonriemain.github.io/SelfProject-0-/">
-					<img src="./img/self-projects.png">
+					<img src="./img/self-projects.png" alt="SelfProjectsImage">
 				</a>
 				<p><span>SelfProject(0)</span></p>
 				<p><span>Use:</span> HTML,CSS,Bootstrap</p>
@@ -102,7 +102,7 @@
 			</div>
 			<div class="memes-template" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1200">
 				<a href="https://jonriemain.github.io/MemesTemplate/">
-					<img src="./img/memes-template.png">
+					<img src="./img/memes-template.png" alt="meme-templateImage">
 				</a>
 				<p><span>Memes Template</span></p>
 				<p><span>Use:</span> HTML,CSS,Javascript</p>
@@ -266,8 +266,11 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
 	AOS.init();
+	AOS.init({
+			once: true
+		});
 </script>
 <!-- scroll effect  -->
 <script type="text/javascript" src="./js/index.js"></script>
 </body>
-</html
+</html>
