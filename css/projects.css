@@ -4,10 +4,11 @@
 	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 3rem 1fr 1fr;
+	grid-template-rows: 3rem repeat(3, 1fr);
 	grid-template-areas: "text text"
 	"LandingPage JonrieClothing"
-	"selfproject memestemplate";
+	"selfproject memestemplate"
+	"dheeluxe .";
 	/*padding-bottom: 30rem;*/
 	/* background */
 	background: rgb(0,0,0);
@@ -45,6 +46,10 @@
 	grid-area: memestemplate;
 	color: #fff;
 }
+.main .projects .dheeluxe{
+	grid-area: dheeluxe;
+	color: #fff;
+}
 .main .projects img{
 	position: relative;
 	width: 90%;
@@ -79,12 +84,13 @@
 	.main .projects{
 
 		grid-template-columns: 1fr;
-		grid-template-rows: 3rem repeat(4, 1fr);
+		grid-template-rows: 3rem repeat(3, 1fr);
 		grid-template-areas: "text"
 		"LandingPage" 
 		"JonrieClothing"
 		"selfproject"
-		"memestemplate";
+		"memestemplate"
+		"dheeluxe";
 		grid-gap: 3rem;
 	}
 	.main .projects h2{
